@@ -1,5 +1,7 @@
-# Pollería Paredes — Base de Datos II
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+
+# Pollería Paredes — Base de Datos II
+
 Repositorio del equipo: PostgreSQL mejorado, datos ficticios originales de PC1 y preparación para integrar MongoDB en PC3 y un frontend en PC4.
 
 **Para leer el código:** abrir [docs/INDICE_CODIGO.md](docs/INDICE_CODIGO.md).
