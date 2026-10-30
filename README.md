@@ -80,28 +80,6 @@ Son datos ficticios proporcionados por el equipo. Se conservan sus identificador
 
 Los pedidos originales quedan como históricos protegidos. No se reconstruye el consumo de ingredientes que el sistema antiguo no registraba. Los pedidos nuevos utilizan las reglas mejoradas. Las capacidades históricas de mesa se infieren del mayor grupo registrado y la duración se asume de 120 minutos; confirmar estas reglas si se utiliza el proyecto fuera de la demostración.
 
-## Pruebas
-
-En su servidor, cargar `04_demo.sql` y ejecutar `05_pruebas.sql`, `06_inventario.sql` y `07_seguridad.sql`. Los pedidos de prueba se revierten con ROLLBACK, sin borrar los datos originales.
-
-Opcionalmente, con Node.js 22 o superior:
-
-```bash
-npm ci
-npm test
-npm run test:originales
-```
-
-Las pruebas automáticas utilizan PostgreSQL 18.6 embebido en PGlite, sin conectarse a su base local. Validan instalación, reglas de negocio, permisos y carga de originales. La restauración con pg_restore y las pruebas concurrentes deben comprobarse en PostgreSQL nativo. La automatización de GitHub ejecuta estas comprobaciones en cada push o Pull Request.
-
-Para regenerar los archivos completos:
-
-```bash
-python scripts/compilar_sql.py
-```
-
-Editar las fuentes modulares y recompilar; no editar únicamente un archivo generado.
-
 ## Compartir con el grupo
 
 Descomprimir el paquete y subir **el contenido de esta carpeta** a la raíz del repositorio, de modo que este README sea visible en la portada. No subir el ZIP como única entrega ni `node_modules`.
@@ -109,3 +87,13 @@ Descomprimir el paquete y subir **el contenido de esta carpeta** a la raíz del 
 Si el repositorio es privado, invitar a los compañeros como colaboradores. Seguir [CONTRIBUTING.md](CONTRIBUTING.md) para organizar cambios en ramas y revisiones.
 
 No se incluye el backup de su computadora; pueden adjuntarlo a una Release. No se incluyen credenciales reales. PostgreSQL y MongoDB se integrarán mediante el backend; las colecciones MongoDB, el backend y el frontend están pendientes. Ver [INTEGRACION_FUTURA.md](docs/INTEGRACION_FUTURA.md).
+
+## Respaldo de la base de datos
+
+El respaldo incluye la estructura y los datos de PostgreSQL.
+
+[Descargar backup](https://github.com/BD-II/PROYECTO-3-SEMANA-15/releases/tag/v2.0)
+
+Para restaurarlo: crear una base vacía en pgAdmin y utilizar
+Restore con el archivo descargado. Los roles se configuran
+por separado con `03_roles.sql`.
