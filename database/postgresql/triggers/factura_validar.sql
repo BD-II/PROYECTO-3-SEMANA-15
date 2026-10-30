@@ -1,0 +1,1 @@
+CREATE TRIGGER factura_validar BEFORE INSERT OR UPDATE OR DELETE ON factura FOR EACH ROW EXECUTE FUNCTION fn_factura_validar();

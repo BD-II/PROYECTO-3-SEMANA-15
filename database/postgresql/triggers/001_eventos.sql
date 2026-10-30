@@ -1,0 +1,13 @@
+\ir a_detalle_validar.sql
+\ir b_detalle_devolver.sql
+\ir detalle_inventario.sql
+\ir pedido_validar.sql
+\ir factura_validar.sql
+\ir factura_entregar.sql
+\ir trg_normalizar_estado_reserva.sql
+\ir trg_historial_reserva.sql
+\ir cliente_id_estable.sql
+\ir plato_id_estable.sql
+\ir empleado_id_estable.sql
+\ir ingrediente_id_estable.sql
+\ir proveedor_id_estable.sql

@@ -1,0 +1,2 @@
+PASS actualizacion sobre estructura y datos extraidos del respaldo PC1.
+[{"pedidos":50,"historicos":50}]

@@ -1,0 +1,1 @@
+CREATE TRIGGER pedido_validar BEFORE INSERT OR UPDATE ON pedido FOR EACH ROW EXECUTE FUNCTION fn_pedido_validar();

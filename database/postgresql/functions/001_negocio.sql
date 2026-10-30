@@ -1,0 +1,13 @@
+\ir fn_calcular_total_pedido.sql
+\ir fn_resumen_pedido.sql
+\ir fn_calcularperdidaporcancelacion.sql
+\ir fn_ingredientes_stock_bajo.sql
+\ir fn_mover_stock.sql
+\ir fn_detalle_validar.sql
+\ir fn_detalle_inventario.sql
+\ir fn_pedido_validar.sql
+\ir fn_factura_validar.sql
+\ir fn_factura_entregar.sql
+\ir fn_normalizar_estado_reserva.sql
+\ir fn_registrar_historial_reserva.sql
+\ir fn_id_inmutable.sql

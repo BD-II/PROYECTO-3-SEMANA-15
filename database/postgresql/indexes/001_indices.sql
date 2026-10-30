@@ -1,0 +1,10 @@
+CREATE INDEX pedido_cliente_fecha_idx ON pedido(id_cliente,fecha);
+CREATE INDEX pedido_empleado_idx ON pedido(id_empleado);
+CREATE INDEX detalle_pedido_pedido_idx ON detalle_pedido(id_pedido);
+CREATE INDEX detalle_pedido_plato_idx ON detalle_pedido(id_plato);
+CREATE INDEX ingrediente_proveedor_idx ON ingrediente(id_proveedor);
+CREATE INDEX receta_ingrediente_idx ON receta(id_ingrediente);
+CREATE INDEX reserva_cliente_idx ON reserva(id_cliente);
+CREATE INDEX reserva_mesa_fecha_idx ON reserva(numero_mesa,fecha_reserva);
+CREATE INDEX historial_reserva_reserva_idx ON historial_reserva(id_reserva,fecha_cambio);
+CREATE INDEX movimiento_ingrediente_idx ON movimiento_inventario(id_ingrediente,registrado_en);

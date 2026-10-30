@@ -1,0 +1,12 @@
+{
+  "name": "polleria-paredes-postgresql",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/validar.mjs",
+    "test:originales": "node scripts/validar_originales.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.13"
+  }
+}
